@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" type="text/css" href="./Exercise2.css" />
+</head>
+<body>
+    <h1 class="center">Calculator</h1>
+    <div class="kalkulator">
+        <form name="calculator" id="calculator">
+            <input type="text" name="data" id="data">
+            <div>
+                <input type="button" id="tujuh" value="7" onclick="inputangka(document.getElementById('tujuh').value)">
+                <input type="button" id="delapan" value="8" onclick="inputangka(document.getElementById('delapan').value)">
+                <input type="button" id="sembilan" value="9" onclick="inputangka(document.getElementById('sembilan').value)">
+                <input type="button" id="kali" value="*" onclick="inputangka(document.getElementById('kali').value)">
+            </div>
+            <div>
+                <input type="button" id="empat" value="4" onclick="inputangka(document.getElementById('empat').value)">
+                <input type="button" id="lima" value="5" onclick="inputangka(document.getElementById('lima').value)">
+                <input type="button" id="enam" value="6" onclick="inputangka(document.getElementById('enam').value)">
+                <input type="button" id="kurang" value="-" onclick="inputangka(document.getElementById('kurang').value)">
+            </div>
+            <div>
+                <input type="button" id="satu" value="1" onclick="inputangka(document.getElementById('satu').value)">
+                <input type="button" id="dua" value="2" onclick="inputangka(document.getElementById('dua').value)">
+                <input type="button" id="tiga" value="3" onclick="inputangka(document.getElementById('tiga').value)">
+                <input type="button" id="tambah" value="+" onclick="inputangka(document.getElementById('tambah').value)">
+            </div>
+            <div>
+                <input type="button" id="nol" value="0" onclick="inputangka(document.getElementById('nol').value)">
+                <input type="button" id="koma" value="." onclick="inputangka(document.getElementById('koma').value)">
+                <input type="button" id="bagi" value="/" onclick="inputangka(document.getElementById('bagi').value)">
+                <input type="button" id="persen" value="%" onclick="inputangka(document.getElementById('persen').value)">	
+            </div>
+            <div class="hasil">
+                <input type="button" id="equal" value="=" onclick="hitung()">
+                <button type="button" id="clear" value="" onclick="hapusangka(document.getElementById('clear').value)">C</button>
+            </div>
+        </form>	
+        </div>
+<script src="Exercise2.js"></script>
+</body>
+</html>
